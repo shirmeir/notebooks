@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="capital-gain <= 5095.5\ngini = 0.361\nsamples = 16409\nvalue = [19892, 6156]", fillcolor="#e58139b0"] ;
+1 [label="marital-status_ Divorced <= 0.5\ngini = 0.3214\nsamples = 15607\nvalue = [19810, 4989]", fillcolor="#e58139bf"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="workclass_ Self-emp-inc <= 0.5\ngini = 0.3451\nsamples = 13389\nvalue = [16501, 4700]", fillcolor="#e58139b6"] ;
+1 -> 2 ;
+3 [label="gini = 0.3343\nsamples = 12958\nvalue = [16175, 4357]", fillcolor="#e58139ba"] ;
+2 -> 3 ;
+4 [label="gini = 0.4997\nsamples = 431\nvalue = [326, 343]", fillcolor="#399de50d"] ;
+2 -> 4 ;
+5 [label="sex_ Male <= 0.5\ngini = 0.1477\nsamples = 2218\nvalue = [3309, 289]", fillcolor="#e58139e9"] ;
+1 -> 5 ;
+6 [label="gini = 0.0904\nsamples = 1361\nvalue = [2129, 106]", fillcolor="#e58139f2"] ;
+5 -> 6 ;
+7 [label="gini = 0.2325\nsamples = 857\nvalue = [1180, 183]", fillcolor="#e58139d7"] ;
+5 -> 7 ;
+8 [label="native-country_ Philippines <= 0.5\ngini = 0.1227\nsamples = 802\nvalue = [82, 1167]", fillcolor="#399de5ed"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="capital-gain <= 7073.5\ngini = 0.1236\nsamples = 798\nvalue = [82, 1157]", fillcolor="#399de5ed"] ;
+8 -> 9 ;
+10 [label="gini = 0.4821\nsamples = 90\nvalue = [60, 88]", fillcolor="#399de551"] ;
+9 -> 10 ;
+11 [label="gini = 0.0395\nsamples = 708\nvalue = [22, 1069]", fillcolor="#399de5fa"] ;
+9 -> 11 ;
+12 [label="gini = 0.0\nsamples = 4\nvalue = [0, 10]", fillcolor="#399de5ff"] ;
+8 -> 12 ;
+}
